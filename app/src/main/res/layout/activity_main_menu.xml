@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".MainMenu">
+
+    <ImageView
+        android:id="@+id/MainMenuLogoImageView"
+        android:layout_width="147dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/MainMenuTitleTextView"
+        android:layout_width="134dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="32dp"
+        android:text="CYPHER"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainMenuLogoImageView" />
+
+    <ScrollView
+        android:id="@+id/MainMenuScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/MainMenuCaesarCipherButton"
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="CaesarCipher"
+                android:text="@string/CaesarCipher"
+                android:translationX="80dp" />
+
+            <Button
+                android:id="@+id/MainMenuMonoalphabeticCipherButton"
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/MonoalphabeticCipher"
+                android:translationX="80dp" />
+
+            <Button
+                android:id="@+id/MainMenuHomophonicSubstitutionCipherButton"
+                android:layout_width="253dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/HomophonicSubstitutionCipher"
+                android:translationX="80dp" />
+
+            <Button
+                android:id="@+id/MainMenuPolygramSubstitutionCipherButton"
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/PolygramSubstitutionCipher"
+                android:translationX="80dp" />
+
+            <Button
+                android:id="@+id/MainMenuPlayfairCipherButton"
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/PlayfairCipher"
+                android:translationX="80dp" />
+
+            <Button
+                android:id="@+id/MainMenuHillCipherButton"
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/HillCipher"
+                android:translationX="80dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
